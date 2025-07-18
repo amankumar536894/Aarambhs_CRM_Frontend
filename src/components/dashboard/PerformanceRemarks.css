@@ -1,0 +1,40 @@
+.performance-remarks {
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+}
+.performance-remarks h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.remarks-table-responsive {
+  overflow-x: auto;
+}
+.performance-remarks table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.1);
+}
+.performance-remarks th, .performance-remarks td {
+  padding: 0.7rem 1rem;
+  text-align: left;
+}
+.performance-remarks th {
+  background: #ff6600;
+  color: #fff;
+  font-weight: 600;
+}
+.performance-remarks td {
+  background: rgba(255,255,255,0.13);
+  color: #222;
+}
+.performance-remarks tr.highlight td {
+  background: #ff6600;
+  color: #fff;
+}
+.performance-remarks tr.black-row td {
+  color: #111;
+  background: #fff;
+} 

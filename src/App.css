@@ -1,0 +1,160 @@
+body, html, #root, .app-layout {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 60px;
+  z-index: 100;
+}
+
+.navbar-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+.nav-btn:hover {
+  background: #222;
+  border-radius: 4px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.venue-name {
+  color: #ffe066;
+  font-weight: bold;
+}
+.venue-location {
+  color: #fff;
+  font-size: 0.95em;
+}
+.profile-icon {
+  margin-left: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.sidebar {
+  width: 200px;
+  background: #e6f2e6;
+  padding: 1.5rem 1rem;
+  min-height: calc(100vh - 60px);
+  box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #8bc48a;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.sidebar-list li {
+  color: #2d6a4f;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s;
+}
+.sidebar-list li:hover {
+  background: #d4e9d4;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem 2rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: unset;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  .dashboard-content {
+    padding: 1rem 0 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-content {
+    padding: 0.5rem 0 0 0;
+    gap: 1rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+  .sidebar {
+    padding: 0.5rem;
+  }
+}

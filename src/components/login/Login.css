@@ -1,0 +1,103 @@
+.login-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f5f6fa 0%, #c9d6ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-card {
+  background: #fff;
+  padding: 3.5rem 3rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(80,80,160,0.13);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 400px;
+  min-height: 420px;
+  max-width: 95vw;
+}
+.login-card h2 {
+  margin: 0 0 0.5rem 0;
+  color: #4e54c8;
+  font-weight: 700;
+  text-align: center;
+}
+.login-card input,
+.login-password-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 1.2rem;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+  background: #ffffe0;
+}
+.login-card input:focus,
+.login-password-input:focus {
+  border: 1.5px solid #4e54c8;
+}
+.login-password-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.login-password-input {
+  padding-right: 2.5rem;
+}
+.login-password-eye {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1rem;
+  color: #888;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 2;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+}
+.login-password-eye svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.login-card button[type="submit"] {
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+.login-card button[type="submit"]:hover {
+  background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
+}
+.login-error {
+  color: #ff3b3b;
+  background: #fff0f0;
+  border-radius: 4px;
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .login-card {
+    padding: 1.5rem 0.5rem;
+    min-width: 95vw;
+    min-height: 350px;
+  }
+} 

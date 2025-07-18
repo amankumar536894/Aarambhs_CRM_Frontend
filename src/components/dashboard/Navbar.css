@@ -1,0 +1,61 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 60px;
+  z-index: 100;
+}
+
+.navbar-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s, color 0.2s;
+  border-bottom: 2.5px solid transparent;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-btn:hover {
+  background: #222;
+  border-radius: 4px 4px 0 0;
+}
+.nav-btn.active {
+  color: #ffe066;
+  font-weight: 700;
+  border-bottom: 2.5px solid #ffe066;
+  background: #181818;
+  border-radius: 4px 4px 0 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.venue-name {
+  color: #ffe066;
+  font-weight: bold;
+}
+.venue-location {
+  color: #fff;
+  font-size: 0.95em;
+}
+.profile-icon {
+  margin-left: 1rem;
+  cursor: pointer;
+  position: relative;
+} 

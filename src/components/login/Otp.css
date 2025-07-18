@@ -1,0 +1,65 @@
+.otp-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f5f6fa 0%, #c9d6ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.otp-card {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(80,80,160,0.13);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 320px;
+  max-width: 90vw;
+}
+.otp-card h2 {
+  margin: 0 0 0.5rem 0;
+  color: #4e54c8;
+  font-weight: 700;
+  text-align: center;
+}
+.otp-card input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.otp-card input:focus {
+  border: 1.5px solid #4e54c8;
+}
+.otp-card button {
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.otp-card button:hover {
+  background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
+}
+.otp-error {
+  color: #ff3b3b;
+  background: #fff0f0;
+  border-radius: 4px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.97rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .otp-card {
+    padding: 1.2rem 0.5rem;
+    min-width: 90vw;
+  }
+} 

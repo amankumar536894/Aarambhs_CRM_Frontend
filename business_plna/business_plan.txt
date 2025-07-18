@@ -1,0 +1,32 @@
+I wants to build a CRM frontend according to this plan 
+
+step1-> customer fill the form on their website 
+step2-> send form details to CRM 
+step3-> CRM connect with nodejs backend 
+step4-> save all the information in nodejs backend 
+step5-> team member can get all the information easily from running nodejs backend with secure way from the CRM 
+
+
+
+NOTE:-
+1. team member is the person who will working under the aarambhs owner. that's are customer support to help the customer and they will call to the customer and help to booking the venue or banquet hall for the customer.
+2. customer will fill the form for enquiry from aarambhs.in website and team member will call to customer from the data of CRM
+3. aarambhs have vendor that owns venues/banquet halls and they wants to do business with aarambhs. and aarambh have team that will works and help for booking the venue for customer 
+4. some multiple area and multiple venues will be allocated to each team member and they can call to those these allocation will be done by admin. 
+5. admin will approve the team member but he can see the information from the CRM but can not call or do any main work. he needs joining the location / venue that's done by admin by a joining ID. this joining id will be provided by admin. and need security that will be approved and joined by only admin. 
+6. in the CRM dashboard he will be able to see the leads of a perticular area or perticular venues. if he wants to see the leads from the other venue(that is assigned or joined by him) he have to switch the venue or location by clicking on top right side profile icon and selecting by change venue or change location. 
+7. admin can active, inactive , delete any team member 
+8. admin have access to all the information as do anything. 
+ 
+
+
+How will CRM will look like:--
+
+1--> A top sticky navbar having these options on left side (Dashboard, Leads, Tasks, Booking options) and on right side I will show first name of venue/hotel name and after that show user profile icon when  a user click on that icon it will show me options of (name of team member, team member's email id, check venue, switch venue, switch location, logout) in these order 
+
+2 -> First there will be a login page for the team member he have to login to the page. he will see Dashboard his name, location or venue that currently working on (means where he switch to that location/venue) 
+
+3-> on Dashboard page there will be all the summary of the team member.
+
+
+
