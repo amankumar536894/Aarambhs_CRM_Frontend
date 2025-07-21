@@ -1,0 +1,276 @@
+.bookingsPage {
+  min-height: 100vh;
+  background: #fafbfc;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookingsContentRow {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.bookingsSidebar {
+  width: 260px;
+  background: #fff;
+  border-right: 1px solid #e5e5e5;
+  padding: 1.5rem 1rem 1rem 1.5rem;
+  min-height: calc(100vh - 60px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.filtersForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filterInput {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #222;
+}
+
+.filterLabel {
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.2rem;
+}
+
+.filterActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.applyBtn {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.applyBtn:hover {
+  background: #2563eb;
+}
+.resetBtn {
+  background: #fbbf24;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.resetBtn:hover {
+  background: #f59e42;
+}
+
+.bookingsMainContent {
+  flex: 1;
+  padding: 2rem 2.5rem 2rem 2rem;
+  min-width: 0;
+  background: #fafbfc;
+  display: flex;
+  flex-direction: column;
+}
+
+.tableWrapper {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tableHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 1.5rem 0.5rem 1.5rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.paginationBtns {
+  display: flex;
+  gap: 0.7rem;
+}
+.paginationBtn {
+  background: #fff;
+  color: #3182ce;
+  border: 2px solid #3182ce;
+  border-radius: 8px;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.07);
+  transition: background 0.18s, color 0.18s, border 0.18s, transform 0.13s;
+}
+.paginationBtn:hover {
+  background: #e6f0fa;
+  color: #2563eb;
+  border-color: #2563eb;
+  transform: scale(1.04);
+}
+.paginationBtnPrimary {
+  background: linear-gradient(90deg, #3182ce 0%, #2563eb 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 12px rgba(49,130,206,0.13);
+}
+.paginationBtnPrimary:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #3182ce 100%);
+  color: #fff;
+  transform: scale(1.06);
+}
+
+.tableScrollX {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.bookingsTable {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+.bookingsTable th, .bookingsTable td {
+  padding: 0.7rem 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+.bookingsTable th {
+  background: #f3f3f3;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.bookingsTable td {
+  background: #fafafa;
+  border-bottom: 1px solid #f1f1f1;
+}
+.statusConfirmed {
+  color: #22c55e;
+  font-weight: 700;
+}
+.statusPending {
+  color: #f59e42;
+  font-weight: 700;
+}
+.statusCanceled {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.filterTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  min-height: 32px;
+}
+.filterTitle {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+.filterToggleIcon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3182ce;
+  margin-left: 0.5rem;
+  transition: color 0.2s;
+}
+.filterOptionsVertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0.3rem 0 0.5rem 0.5rem;
+}
+.filterCheckboxLabel {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.openSection {
+  margin-bottom: 1.2rem;
+}
+.paginationBtnsBottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 1.2rem 0 0 0;
+}
+.prevBtn, .nextBtn {
+  background: #fff;
+  color: #4e54c8;
+  border: 1.5px solid #4e54c8;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  min-width: 110px;
+  box-sizing: border-box;
+}
+.prevBtn:hover, .nextBtn:hover {
+  background: #f0f0ff;
+}
+
+@media (max-width: 900px) {
+  .bookingsSidebar {
+    width: 100vw;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1rem 0.5rem;
+  }
+  .bookingsContentRow {
+    flex-direction: column;
+  }
+  .bookingsMainContent {
+    padding: 1rem 0.5rem;
+  }
+  .tableHeaderRow {
+    padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+  }
+  .tableWrapper {
+    padding: 0.2rem 0.2rem 1rem 0.2rem;
+  }
+}

@@ -14,7 +14,6 @@ const ReportCard = () => (
             <th>Unique Follow ups added</th>
             <th>Total Visits</th>
             <th>Total Closures</th>
-            <th>Total Venue</th>
           </tr>
         </thead>
         <tbody>
@@ -24,7 +23,6 @@ const ReportCard = () => (
             <td className="number">0.15</td>
             <td className="number">83</td>
             <td className="number">6</td>
-            <td className="number">0</td>
             <td className="number">0</td>
           </tr>
         </tbody>

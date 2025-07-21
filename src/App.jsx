@@ -6,8 +6,12 @@ import LeadsPage from './components/dashboard/leads/LeadsPage';
 import ReportCard from './components/dashboard/ReportCard';
 import PerformanceRemarks from './components/dashboard/PerformanceRemarks';
 import BookingsTable from './components/dashboard/BookingsTable';
+import LeadDetailsPage from './components/dashboard/leadDetails/LeadDetailsPage';
+import TasksPage from './components/dashboard/tasks/TasksPage';
+import VisitsPage from './components/dashboard/visits/VisitsPage';
 import Login from './components/login/Login';
 import Otp from './components/login/Otp';
+import BookingsPage from './components/dashboard/bookings/BookingsPage';
 import './App.css';
 
 function Dashboard() {
@@ -46,6 +50,10 @@ function App() {
       <Route path="/otp" element={<Otp />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/dashboard/leads" element={<LeadsOnlyPage />} />
+      <Route path="/dashboard/tasks" element={<TasksPage />} />
+      <Route path="/dashboard/visits" element={<VisitsPage />} />
+      <Route path="/dashboard/leads/:leadId" element={<LeadDetailsPage />} />
+      <Route path="/dashboard/bookings" element={<BookingsPage />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
